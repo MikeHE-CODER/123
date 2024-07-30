@@ -25,3 +25,11 @@ int array_max(int integers[], int length) {
   }
   return max;
 }
+int sum_min_max(int integers[], int length) {
+    if (length <= 0) {
+        return -1; // Returning -1 to indicate an error
+    }
+    int min = array_min(integers, length);
+    int max = array_max(integers, length);
+    return min + max;
+}
