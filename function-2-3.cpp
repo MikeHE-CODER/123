@@ -22,9 +22,9 @@ int sum_if_palindrome(int integers[], int length) {
   }
   return result;
 }
-int sum_array_element(int integers[], int length) {
+int sum_array_elements(int integers[], int length) {
   if (length <= 0) {
-    return false;
+    return -1;
   }
   int isfou = is_palindrome(integers, length);
   if (isfou == true) {
